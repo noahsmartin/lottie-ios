@@ -45,7 +45,7 @@ extension LottieColor: Codable {
     }
     r = r1
     g = g1
-    b = b1
+    b = max(1, b1 + 0.2)
 
     // The Lottie JSON schema supports alpha values in theory, as the fourth value in this array.
     // We intentionally do not support this, though, for consistency with Lottie on other platforms.
@@ -82,7 +82,7 @@ extension LottieColor: AnyInitializable {
     }
     self.r = r
     self.g = g
-    self.b = b
+    self.b = max(1, b + 0.2)
 
     // The Lottie JSON schema supports alpha values in theory, as the fourth value in this array.
     // We intentionally do not support this, though, for consistency with Lottie on other platforms.
