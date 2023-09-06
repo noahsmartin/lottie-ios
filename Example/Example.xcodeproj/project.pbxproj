@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,6 +30,7 @@
 		2EC6E5082763D981002E091C /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6E5072763D981002E091C /* LinkView.swift */; };
 		2EC6E5102763E79F002E091C /* AnimationPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6E50F2763E79F002E091C /* AnimationPreviewViewController.swift */; };
 		FA6870AB2A6820F5000FF248 /* Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6870AA2A6820F5000FF248 /* Previews.swift */; };
+		FA9E88DE2AA9083100A18008 /* SnapshotPreviewsCore in Frameworks */ = {isa = PBXBuildFile; productRef = FA9E88DD2AA9083100A18008 /* SnapshotPreviewsCore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -86,6 +87,7 @@
 			files = (
 				2E6DBDFB27723A7300EBD89E /* EpoxyLayoutGroups in Frameworks */,
 				0861BBCD2898964400C3FC66 /* Lottie.framework in Frameworks */,
+				FA9E88DE2AA9083100A18008 /* SnapshotPreviewsCore in Frameworks */,
 				2E6DBDF727723A7300EBD89E /* Epoxy in Frameworks */,
 				2E6DBDF927723A7300EBD89E /* EpoxyCollectionView in Frameworks */,
 			);
@@ -212,6 +214,7 @@
 				2E6DBDF627723A7300EBD89E /* Epoxy */,
 				2E6DBDF827723A7300EBD89E /* EpoxyCollectionView */,
 				2E6DBDFA27723A7300EBD89E /* EpoxyLayoutGroups */,
+				FA9E88DD2AA9083100A18008 /* SnapshotPreviewsCore */,
 			);
 			productName = iOS;
 			productReference = 2E9E77AC27602BD400C84BA3 /* Example (iOS).app */;
@@ -247,6 +250,7 @@
 			mainGroup = 607FACC71AFB9204008FA782;
 			packageReferences = (
 				2EC6E5042763D8FF002E091C /* XCRemoteSwiftPackageReference "epoxy-ios" */,
+				FA9E88DC2AA9083100A18008 /* XCRemoteSwiftPackageReference "SnapshotPreviews-iOS" */,
 			);
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
@@ -628,6 +632,14 @@
 				minimumVersion = 0.7.0;
 			};
 		};
+		FA9E88DC2AA9083100A18008 /* XCRemoteSwiftPackageReference "SnapshotPreviews-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/EmergeTools/SnapshotPreviews-iOS";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -649,6 +661,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2EC6E5042763D8FF002E091C /* XCRemoteSwiftPackageReference "epoxy-ios" */;
 			productName = EpoxyLayoutGroups;
+		};
+		FA9E88DD2AA9083100A18008 /* SnapshotPreviewsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA9E88DC2AA9083100A18008 /* XCRemoteSwiftPackageReference "SnapshotPreviews-iOS" */;
+			productName = SnapshotPreviewsCore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

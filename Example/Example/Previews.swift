@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 import Lottie
+import SnapshotPreviewsCore
 
 struct Lottie_Previews: PreviewProvider {
 
@@ -40,6 +41,7 @@ struct Lottie_Previews: PreviewProvider {
         }
         .previewDisplayName("\(sampleAnimationName)-\(progress)")
         .previewLayout(.sizeThatFits)
+        .emergeSnapshotPrecision(0.985)
     }
   }
 

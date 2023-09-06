@@ -20,6 +20,15 @@
         }
       },
       {
+        "package": "SnapshotPreviews",
+        "repositoryURL": "https://github.com/EmergeTools/SnapshotPreviews-iOS",
+        "state": {
+          "branch": "main",
+          "revision": "c8b8f596ea9794d1080f62d031587c1dc521758e",
+          "version": null
+        }
+      },
+      {
         "package": "AirbnbSwift",
         "repositoryURL": "https://github.com/airbnb/swift",
         "state": {
