@@ -14,7 +14,10 @@ let package = Package(
         "Private/EmbeddedLibraries/README.md",
         "Private/EmbeddedLibraries/ZipFoundation/README.md",
         "Private/EmbeddedLibraries/EpoxyCore/README.md",
-      ]),
+      ],
+    swiftSettings: [
+      .unsafeFlags(["-Xfrontend", "-enable-experimental-feature", "-Xfrontend", "LayoutStringValueWitnesses", "-Xfrontend", "-enable-layout-string-value-witnesses", "-Xfrontend", "-enable-layout-string-value-witnesses-instantiation"])
+    ]),
   ])
 
 #if swift(>=5.6)

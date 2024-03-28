@@ -323,6 +323,7 @@
 					"-exported_symbols_list",
 					/dev/null,
 				);
+				OTHER_SWIFT_FLAGS = "-Xfrontend -enable-experimental-feature -Xfrontend LayoutStringValueWitnesses -Xfrontend -enable-layout-string-value-witnesses -Xfrontend -enable-layout-string-value-witnesses-instantiation";
 				PRODUCT_BUNDLE_IDENTIFIER = com.airbnb.lottie.sizetest.iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -355,6 +356,7 @@
 					"-exported_symbols_list",
 					/dev/null,
 				);
+				OTHER_SWIFT_FLAGS = "-Xfrontend -enable-experimental-feature -Xfrontend LayoutStringValueWitnesses -Xfrontend -enable-layout-string-value-witnesses -Xfrontend -enable-layout-string-value-witnesses-instantiation";
 				PRODUCT_BUNDLE_IDENTIFIER = com.airbnb.lottie.sizetest.iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
